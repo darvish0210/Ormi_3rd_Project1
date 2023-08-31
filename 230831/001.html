@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <input type="radio" name="성별" id="남">: 남
+    <input type="radio" name="성별" id="여">: 여
+    <button><a href="#">pre</a></button>
+    <button><a href="002.html">next</a></button>
+    <script>
+        document.getElementById('남').addEventListener('click',function(){
+            localStorage.setItem('성별','남');
+        });
+        document.getElementById('여').addEventListener('click',function(){
+            localStorage.setItem('성별','여');
+        });
+    </script>
+</body>
+</html>

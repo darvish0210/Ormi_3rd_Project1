@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <nav>
+        메뉴
+    </nav>
+    <div id="app"></div>
+    <footer>
+        푸터
+    </footer>
+    <script>
+        const $app = document.querySelector('#app');
+        let page = 1;
+        const page1 = `
+            <input type="radio" name="성별" id="남">: 남
+            <input type="radio" name="성별" id="여">: 여
+            <button class='pre'>pre</button>
+            <button class='next'>next</button>
+        `
+        const page2 = `
+            <input type="radio" name="연령" id="a">: 10대
+            <input type="radio" name="연령" id="b">: 20대
+            <button><a href="002.html">pre</a></button>
+            <button><a href="003.html">next</a></button>
+        `
+        $app.innerHTML = page1;
+
+        const onePageNext = $app.querySelector('.next')
+        onePageNext.addEventListener('click',function(){
+            // alert('next클릭!');
+            page++;
+            nextPageRender();
+        });
+
+        function nextPageRender(){
+            $app.innerHTML = page2;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <input type="radio" name="연령" id="a">: 10대
+    <input type="radio" name="연령" id="b">: 20대
+    <button><a href="002.html">pre</a></button>
+    <button><a href="003.html">next</a></button>
+    <script>
+        document.getElementById('a').addEventListener('click',function(){
+            localStorage.setItem('연령','10대');
+        });
+        document.getElementById('b').addEventListener('click',function(){
+            localStorage.setItem('연령','20대');
+        });
+    </script>
+</body>
+</html>
