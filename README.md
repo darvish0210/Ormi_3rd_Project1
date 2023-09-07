@@ -24,8 +24,12 @@
 ## 3. 프로젝트 구조와 개발 일정
 
 ### 3.1 프로젝트 구조
-<img width="100%" src = 
-'https://github.com/darvish0210/Ormi_3rd_Project1/assets/142385778/26ce4f33-6109-4924-a783-0e969a67f7b4'/>
+```
+├─Ormi_3rd_Project1 
+│      index.css 
+│      index.html 
+│      index.js
+```
 
 ### 3.2 개발 일정
 + 총 프로젝트 기간 (230829~230906)
